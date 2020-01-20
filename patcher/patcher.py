@@ -77,7 +77,7 @@ class FirmwarePatcher():
         self.data = XiaoTea.XiaoTea().decrypt(self.data)
     #@author : ScooterHacking
     def version_spoofing(self):
-        sig = [0x4F, 0xF4, 0x93, 0x70, 0xA0, 0x86]
+        sig = [0x4F, 0xF4, 0x93, 0x70, 0xA0, 0x86, 0x12, 0x48, 0x00, 0x78]
         ofs = FindPattern(self.data, sig)
         pre = self.data[ofs:ofs+4]
         post = bytes(self.ks.asm('MOVW   R0, #0x526')[0])
