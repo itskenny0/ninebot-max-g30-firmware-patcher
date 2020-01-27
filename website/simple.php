@@ -44,7 +44,7 @@
 	</head>
 
 	<body class="container">
-		<form action="/build/max/cfw" id="cfwform">
+		<form action="https://get.scooterhacking.org/max" id="cfwform">
 		
 			<input type="hidden" name="version" value="DRV126" />
 
@@ -85,8 +85,8 @@
 							<br />Falls du m&ouml;chtest, spende ihnen doch etwas in die Kaffeekasse.</b></p>
 
 							<a href="https://paypal.me/BotoXbz" target="_BLANK" class="chip tooltipped" data-tooltip="Creator of M365 CFW Toolkit"><img src="https://github.com/BotoX.png"> BotoX</a>
-							<a href="https://www.paypal.me/majsinko" target="_BLANK" class="chip tooltipped" data-tooltip="CFW Scripting"><img src="https://github.com/majsi.png"> majsi</a>
-							<a href="https://www.paypal.me/camialfa" target="_BLANK" class="chip tooltipped" data-tooltip="Creator of ES downG & M365 downG"><img src="downg.png"> CamiAlfa</a>
+							<a href="https://paypal.me/majsinko" target="_BLANK" class="chip tooltipped" data-tooltip="CFW Scripting"><img src="https://github.com/majsi.png"> majsi</a>
+							<a href="https://paypal.me/camialfa" target="_BLANK" class="chip tooltipped" data-tooltip="Creator of ES downG & M365 downG"><img src="downg.png"> CamiAlfa</a>
 							<a href="https://paypal.me/scooterhacking" target="_BLANK" class="chip tooltipped" data-tooltip="Backend maintainer"><img src="scooterhacking.png"> ScooterHacking.org</a>
 						</div>
 					</li>
@@ -142,6 +142,13 @@
 							<p class="range-field" id="startspeed-range">
 							  <input type="range" name="motor_start_speed" class="white" id="mpc" min="1" max="10" value="5" step="1" />
 							  <span class="left"><b>1 km/h</b></span><span class="right"><b>10 km/h</b></span>
+							</p>
+
+							<br /><br />
+
+							<p>
+								<label><input type="checkbox" name="no_kers" /><span>KERS deaktivieren</span></label><br />
+								Deaktiviert die Energier&uuml;ckgewinnung; hierdurch rollt der Scooter aus, wenn nicht Gas gegeben wird, anstatt automatisch zu bremsen.
 							</p>
 						</div>
 					</li>
@@ -212,3 +219,4 @@
 		</form>
 	</body>
 </html>
+
